@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "doisHomensMeio, conversa, carro, serie"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "92bce2a1-f9ed-4927-a3b4-30b4f2306783",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
+}
